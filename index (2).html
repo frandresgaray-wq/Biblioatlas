@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BIBLIOATLAS — Biblioteca Inteligente de Atlas</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --navy:        #0d1b3e;
+    --navy-mid:    #162550;
+    --navy-light:  #1e3370;
+    --orange:      #e8621a;
+    --orange-dark: #c44e10;
+    --orange-soft: rgba(232,98,26,0.12);
+    --white:       #ffffff;
+    --off-white:   #f5f6f8;
+    --silver:      #c8d4e8;
+    --silver-dim:  rgba(200,212,232,0.35);
+    --shadow:      rgba(13,27,62,0.18);
+    --text-main:   #0d1b3e;
+    --text-muted:  #5a6a8a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--off-white);
+    color: var(--text-main);
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--navy);
+    padding: 0 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--orange);
+    box-shadow: 0 2px 16px rgba(13,27,62,0.4);
+  }
+  .header-left { display: flex; align-items: center; gap: 1.25rem; }
+  .logo img { height: 46px; width: auto; object-fit: contain; }
+  .header-divider {
+    width: 1px; height: 30px;
+    background: var(--silver-dim);
+  }
+  .product-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .product-sub {
+    font-size: 0.62rem;
+    color: var(--silver);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-top: 1px;
+  }
+  .nav-btns { display: flex; gap: 0.75rem; align-items: center; }
+  .btn {
+    padding: 0.45rem 1.1rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.83rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    letter-spacing: 0.02em;
+  }
+  .btn-outline {
+    background: transparent;
+    border: 1.5px solid var(--orange);
+    color: var(--orange);
+  }
+  .btn-outline:hover { background: var(--orange); color: var(--white); }
+  .btn-orange { background: var(--orange); color: var(--white); }
+  .btn-orange:hover { background: var(--orange-glow); }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--navy);
+    color: var(--white);
+    padding: 5.5rem 2rem 5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(232,98,26,0.18) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--orange);
+  }
+  .hero-eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+    position: relative;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.6rem, 6vw, 4.8rem);
+    font-weight: 900;
+    line-height: 1.08;
+    margin-bottom: 1.25rem;
+    position: relative;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--orange);
+  }
+  .hero p {
+    font-size: 1.1rem;
+    opacity: 0.75;
+    max-width: 500px;
+    margin: 0 auto 2.25rem;
+    line-height: 1.7;
+    position: relative;
+  }
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    margin-top: 3rem;
+    position: relative;
+  }
+  .stat { text-align: center; }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: var(--orange);
+  }
+  .stat-label {
+    font-size: 0.72rem;
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-top: 2px;
+  }
+
+  /* ── SEARCH ── */
+  .search-wrap {
+    max-width: 580px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .search-wrap input {
+    width: 100%;
+    padding: 0.95rem 3rem 0.95rem 1.3rem;
+    border-radius: 6px;
+    border: 2px solid rgba(232,98,26,0.5);
+    background: rgba(255,255,255,0.07);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .search-wrap input::placeholder { color: rgba(255,255,255,0.4); }
+  .search-wrap input:focus {
+    border-color: var(--orange);
+    background: rgba(255,255,255,0.1);
+  }
+  .search-icon {
+    position: absolute;
+    right: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--orange);
+    font-size: 1rem;
+    pointer-events: none;
+  }
+
+  /* ── MAIN ── */
+  main { max-width: 1220px; margin: 0 auto; padding: 2.75rem 1.5rem; }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-main);
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: var(--orange);
+    border-radius: 2px;
+  }
+
+  /* ── BOOK GRID ── */
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .book-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px var(--shadow);
+    cursor: pointer;
+    transition: transform 0.22s, box-shadow 0.22s;
+    border: 1px solid rgba(13,27,62,0.08);
+  }
+  .book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(13,27,62,0.2);
+    border-color: var(--orange);
+  }
+  .book-cover {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .book-cover-text {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 0.75rem;
+    background: linear-gradient(transparent, rgba(13,27,62,0.88));
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+  }
+  .book-info { padding: 0.9rem 1rem; }
+  .book-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--text-main);
+  }
+  .book-author { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  .book-tags { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+  .tag {
+    background: var(--orange-soft);
+    border: 1px solid rgba(232,98,26,0.3);
+    color: var(--orange);
+    font-size: 0.68rem;
+    padding: 0.15rem 0.55rem;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  .book-actions {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem 0.9rem;
+  }
+  .btn-sm {
+    flex: 1;
+    padding: 0.42rem;
+    font-size: 0.78rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  .btn-read { background: var(--navy); color: var(--white); }
+  .btn-read:hover { background: var(--navy-light); }
+  .btn-chat { background: var(--orange); color: var(--white); }
+  .btn-chat:hover { background: var(--orange-dark); }
+
+  .empty-state {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 5rem 2rem;
+    color: var(--text-muted);
+  }
+  .empty-state .icon { font-size: 4rem; margin-bottom: 1rem; opacity: 0.4; }
+  .empty-state p { font-size: 1rem; }
+
+  /* ── MODALS ── */
+  .overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(13,5,40,0.75);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    backdrop-filter: blur(6px);
+  }
+  .overlay.active { display: flex; }
+  .modal {
+    background: var(--white);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 520px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 24px 64px rgba(13,27,62,0.35);
+    border: 1px solid rgba(232,98,26,0.2);
+  }
+  .modal-header {
+    padding: 1.5rem 1.5rem 1rem;
+    border-bottom: 1px solid var(--off-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--navy);
+    border-radius: 12px 12px 0 0;
+  }
+  .modal-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--white);
+  }
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--silver);
+    line-height: 1;
+    transition: color 0.2s;
+  }
+  .close-btn:hover { color: var(--orange); }
+  .modal-body { padding: 1.5rem; }
+
+  /* ── UPLOAD MODAL ── */
+  .form-group { margin-bottom: 1.1rem; }
+  .form-group label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    color: var(--navy-light);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: 1.5px solid #dde3f0;
+    border-radius: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.92rem;
+    outline: none;
+    transition: border-color 0.2s;
+    background: white;
+    color: var(--navy);
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 0 3px var(--orange-soft);
+  }
+  .drop-zone {
+    border: 2px dashed rgba(232,98,26,0.35);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: var(--orange-soft);
+  }
+  .drop-zone:hover, .drop-zone.dragover {
+    border-color: var(--orange);
+    background: rgba(232,98,26,0.18);
+  }
+  .drop-zone strong { color: var(--orange); }
+  .color-swatches { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .swatch {
+    width: 32px; height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.15s;
+  }
+  .swatch.selected, .swatch:hover { border-color: var(--navy); transform: scale(1.15); }
+  .btn-full { width: 100%; padding: 0.85rem; font-size: 1rem; border-radius: 6px; }
+
+  /* ── API KEY MODAL ── */
+  .api-notice {
+    background: var(--orange-soft);
+    border: 1px solid rgba(232,98,26,0.25);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.84rem;
+    color: #7a3a10;
+    line-height: 1.55;
+  }
+  .api-notice a { color: var(--orange); font-weight: 600; }
+
+  /* ── CHAT MODAL ── */
+  .chat-modal { max-width: 640px; }
+  .chat-book-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--off-white);
+    border-bottom: 1px solid rgba(13,27,62,0.1);
+  }
+  .chat-book-cover {
+    width: 44px; height: 60px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+  .chat-book-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--text-main); }
+  .chat-book-author { font-size: 0.8rem; color: var(--text-muted); }
+  .chat-messages {
+    height: 340px;
+    overflow-y: auto;
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--off-white);
+  }
+  .msg {
+    max-width: 82%;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    animation: fadeUp 0.3s ease;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .msg-user {
+    align-self: flex-end;
+    background: var(--navy);
+    color: var(--white);
+    border-bottom-right-radius: 4px;
+  }
+  .msg-ai {
+    align-self: flex-start;
+    background: var(--white);
+    border: 1px solid rgba(13,27,62,0.1);
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 2px 8px var(--shadow);
+  }
+  .msg-ai .ai-label {
+    font-size: 0.67rem;
+    font-weight: 700;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.35rem;
+  }
+  .download-pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+    padding: 0.4rem 0.9rem;
+    background: var(--navy);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition: background 0.2s;
+  }
+  .download-pdf-btn:hover { background: var(--orange); }
+  .typing { display: flex; gap: 4px; align-items: center; padding: 0.5rem 0; }
+  .typing span {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--orange);
+    animation: bounce 1.2s infinite;
+  }
+  .typing span:nth-child(2) { animation-delay: 0.2s; background: var(--navy); }
+  .typing span:nth-child(3) { animation-delay: 0.4s; background: var(--orange); }
+  @keyframes bounce {
+    0%,60%,100% { transform: translateY(0); }
+    30%          { transform: translateY(-6px); }
+  }
+  .chat-input-area {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid rgba(13,27,62,0.08);
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-end;
+    background: var(--white);
+  }
+  .chat-input-area textarea {
+    flex: 1;
+    resize: none;
+    border: 1.5px solid rgba(13,27,62,0.15);
+    border-radius: 6px;
+    padding: 0.65rem 0.9rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+    max-height: 100px;
+    color: var(--text-main);
+  }
+  .chat-input-area textarea:focus { border-color: var(--orange); }
+  .send-btn {
+    background: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    width: 42px; height: 42px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    flex-shrink: 0;
+  }
+  .send-btn:hover { background: var(--orange-dark); }
+  .send-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .no-api-warning {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  /* ── PDF MODAL ── */
+  .pdf-modal { max-width: 820px; }
+  .pdf-frame { width: 100%; height: 66vh; border: none; border-radius: 6px; }
+
+  /* ── API KEY BADGE ── */
+  .api-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+  }
+  .api-badge.set {
+    background: rgba(22,163,74,0.12);
+    color: #16a34a;
+    border: 1px solid rgba(22,163,74,0.35);
+  }
+  .api-badge.unset {
+    background: var(--orange-soft);
+    color: var(--orange);
+    border: 1px solid rgba(232,98,26,0.35);
+  }
+  .dot { width: 7px; height: 7px; border-radius: 50%; }
+  .dot.green { background: #16a34a; }
+  .dot.red { background: var(--orange); }
+
+  /* ── TOAST ── */
+  .toast {
+    position: fixed;
+    bottom: 1.5rem; right: 1.5rem;
+    background: var(--navy);
+    color: var(--white);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.87rem;
+    border-left: 4px solid var(--orange);
+    z-index: 999;
+    transform: translateY(80px);
+    opacity: 0;
+    transition: all 0.3s;
+    box-shadow: 0 8px 24px rgba(13,27,62,0.3);
+  }
+  .toast.show { transform: translateY(0); opacity: 1; }
+
+  /* ── TABLE in AI responses ── */
+  .msg-ai table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0.5rem 0;
+    font-size: 0.82rem;
+  }
+  .msg-ai th {
+    background: var(--navy);
+    color: var(--white);
+    padding: 0.4rem 0.7rem;
+    text-align: left;
+  }
+  .msg-ai td {
+    border: 1px solid rgba(13,27,62,0.1);
+    padding: 0.35rem 0.7rem;
+  }
+  .msg-ai tr:nth-child(even) td { background: var(--off-white); }
+  .msg-ai .schema-block {
+    background: var(--off-white);
+    border-left: 3px solid var(--orange);
+    padding: 0.6rem 0.9rem;
+    margin: 0.5rem 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.85rem;
+    white-space: pre-wrap;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  /* ── btn-orange alias ── */
+  .btn-orange { background: var(--orange); color: var(--white); }
+  .btn-orange:hover { background: var(--orange-dark); }
+
+  @media (max-width: 600px) {
+    .hero-stats { gap: 1.5rem; }
+    .books-grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); }
+    header { padding: 0 1rem; }
+    .product-sub { display: none; }
+  }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-left">
+    <div class="logo">
+      <img src="data:image/webp;base64,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" alt="Atlas" />
+    </div>
+    <div class="header-divider"></div>
+    <div>
+      <div class="product-name">BIBLIOATLAS</div>
+      <div class="product-sub">Biblioteca Inteligente de Atlas</div>
+    </div>
+  </div>
+  <div class="nav-btns">
+    <div id="userInfo" style="display:none;align-items:center;gap:0.6rem">
+      <img id="userAvatar" style="width:30px;height:30px;border-radius:50%;border:2px solid var(--orange)" />
+      <span id="userName" style="color:var(--silver);font-size:0.82rem"></span>
+    </div>
+    <button id="loginBtn" class="btn btn-outline" onclick="loginWithGoogle()" style="display:none">
+      <svg width="14" height="14" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+      Iniciar sesión
+    </button>
+    <button id="logoutBtn" class="btn btn-outline" onclick="logout()" style="display:none">Cerrar sesión</button>
+    <button id="uploadBtn" class="btn btn-orange" onclick="openUploadModal()" style="display:none">+ Subir libro</button>
+  </div>
+</header>
+
+<!-- LOGIN WALL -->
+<div id="loginWall" style="display:none;position:fixed;inset:0;background:rgba(13,5,40,0.92);z-index:9999;align-items:center;justify-content:center;backdrop-filter:blur(8px)">
+  <div style="background:var(--white);border-radius:16px;padding:3rem 2.5rem;max-width:420px;width:90%;text-align:center;box-shadow:0 32px 80px rgba(13,27,62,0.5)">
+    <div style="font-size:3rem;margin-bottom:1rem">📚</div>
+    <h2 style="font-family:'Playfair Display',serif;color:var(--navy);margin-bottom:0.5rem;font-size:1.6rem">Bienvenido a BiblioAtlas</h2>
+    <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:2rem;line-height:1.6">Inicia sesión para acceder a la biblioteca inteligente y consultar libros con IA.</p>
+    <button onclick="loginWithGoogle()" style="display:inline-flex;align-items:center;gap:0.75rem;background:var(--navy);color:white;border:none;padding:0.9rem 2rem;border-radius:8px;font-size:1rem;font-family:'DM Sans',sans-serif;font-weight:600;cursor:pointer;width:100%;justify-content:center;transition:background 0.2s" onmouseover="this.style.background='var(--orange)'" onmouseout="this.style.background='var(--navy)'">
+      <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+      Continuar con Google
+    </button>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-eyebrow">Atlas · Biblioteca Inteligente</div>
+  <h1>Tu próximo libro<br><em>favorito te espera</em></h1>
+  <p>Sube libros en PDF y permite que cualquiera los lea y consulte con inteligencia artificial.</p>
+  <div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="Buscar por título, autor o disciplina…" oninput="filterBooks()"/>
+    <span class="search-icon">⌕</span>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num" id="statBooks">0</div>
+      <div class="stat-label">Libros</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Consultas IA</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Disponible</div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main>
+  <div class="section-title">📚 Colección</div>
+  <div class="books-grid" id="booksGrid">
+    <div class="empty-state">
+      <div class="icon">📭</div>
+      <p>Aún no hay libros. ¡Sube el primero!</p>
+    </div>
+  </div>
+</main>
+
+<!-- ══ MODAL: API KEY ══ -->
+<div class="overlay" id="apiOverlay">
+  <div class="modal" style="max-width:460px">
+    <div class="modal-header">
+      <h2>🔑 Configurar API Key</h2>
+      <button class="close-btn" onclick="closeModal('apiOverlay')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="api-notice">
+        Necesitas una API Key de <strong>Anthropic (Claude)</strong> para activar el análisis con IA.<br>
+        Obtenla en <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a> → "API Keys"
+      </div>
+      <div class="form-group">
+        <label>Tu API Key de Anthropic</label>
+        <input type="password" id="apiKeyInput" placeholder="sk-ant-…" />
+      </div>
+      <button class="btn btn-orange btn-full" onclick="saveApiKey()">Activar BIBLIOATLAS IA ✦</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MODAL: INCORPORAR VOLUMEN ══ -->
+<div class="overlay" id="uploadOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>📖 Subir libro</h2>
+      <button class="close-btn" onclick="closeModal('uploadOverlay')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>Título del libro *</label>
+        <input type="text" id="bookTitle" placeholder="Ej: Don Quijote de la Mancha"/>
+      </div>
+      <div class="form-group">
+        <label>Autor</label>
+        <input type="text" id="bookAuthor" placeholder="Ej: Miguel de Cervantes"/>
+      </div>
+      <div class="form-group">
+        <label>Categoría</label>
+        <select id="bookCategory">
+          <option value="Literatura">Literatura</option>
+          <option value="Ciencia">Ciencia</option>
+          <option value="Historia">Historia</option>
+          <option value="Filosofía">Filosofía</option>
+          <option value="Tecnología">Tecnología</option>
+          <option value="Arte">Arte</option>
+          <option value="Derecho">Derecho</option>
+          <option value="Economía">Economía</option>
+          <option value="Otro">Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Color de portada</label>
+        <div class="color-swatches" id="colorSwatches"></div>
+      </div>
+      <div class="form-group">
+        <label>Emoji de portada</label>
+        <input type="text" id="bookEmoji" placeholder="📚" maxlength="2" style="width:80px;text-align:center;font-size:1.4rem"/>
+      </div>
+      <div class="form-group">
+        <label>Archivo PDF *</label>
+        <div class="drop-zone" id="dropZone" onclick="document.getElementById('pdfInput').click()">
+          <div class="dz-icon">📄</div>
+          <p><strong>Haz clic</strong> o arrastra el PDF aquí</p>
+          <p id="fileName" style="margin-top:0.5rem;color:var(--orange);font-weight:500"></p>
+        </div>
+        <input type="file" id="pdfInput" accept=".pdf" style="display:none" onchange="handleFile(event)"/>
+      </div>
+      <button class="btn btn-orange btn-full" onclick="uploadBook()">Agregar a la biblioteca ✦</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MODAL: CHAT IA ══ -->
+<div class="overlay" id="chatOverlay">
+  <div class="modal chat-modal">
+    <div class="modal-header">
+      <h2>💬 Chat con IA</h2>
+      <button class="close-btn" onclick="closeModal('chatOverlay')">✕</button>
+    </div>
+    <div class="chat-book-info" id="chatBookInfo"></div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <div class="chat-input-area" id="chatInputArea">
+      <textarea id="chatInput" rows="1" placeholder="Pregunta sobre el libro…" onkeydown="handleChatKey(event)"></textarea>
+      <button class="send-btn" id="sendBtn" onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MODAL: VER PDF ══ -->
+<div class="overlay" id="pdfOverlay">
+  <div class="modal pdf-modal">
+    <div class="modal-header">
+      <h2 id="pdfModalTitle">📄 Leyendo libro</h2>
+      <button class="close-btn" onclick="closeModal('pdfOverlay')">✕</button>
+    </div>
+    <div class="modal-body" style="padding:1rem">
+      <iframe id="pdfFrame" class="pdf-frame"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+// ── SUPABASE AUTH ──
+const SUPABASE_URL = 'https://hizcwcukcbmmumyaedwf.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhpemN3Y3VrY2JtbXVteWFlZHdmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI4MDk0NzEsImV4cCI6MjA4ODM4NTQ3MX0.IOHJiroFvHBPY8JppzNk8-zPZJpz0KbqbPj_WcH9oLE';
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+let currentUser = null;
+let supabaseSession = null;
+
+async function loginWithGoogle() {
+  await supabase.auth.signInWithOAuth({
+    provider: 'google',
+    options: { redirectTo: 'https://biblioatlas.netlify.app/' }
+  });
+}
+async function logout() {
+  await supabase.auth.signOut();
+  currentUser = null;
+  supabaseSession = null;
+  updateAuthUI(null);
+  showToast('👋 Sesión cerrada');
+}
+function updateAuthUI(user) {
+  const loginWall = document.getElementById('loginWall');
+  const loginBtn = document.getElementById('loginBtn');
+  const logoutBtn = document.getElementById('logoutBtn');
+  const uploadBtn = document.getElementById('uploadBtn');
+  const userInfo = document.getElementById('userInfo');
+  if (user) {
+    loginWall.style.display = 'none';
+    loginBtn.style.display = 'none';
+    logoutBtn.style.display = 'inline-flex';
+    uploadBtn.style.display = 'inline-flex';
+    userInfo.style.display = 'flex';
+    document.getElementById('userName').textContent = user.user_metadata?.full_name?.split(' ')[0] || user.email;
+    const avatar = document.getElementById('userAvatar');
+    if (user.user_metadata?.avatar_url) avatar.src = user.user_metadata.avatar_url;
+    else avatar.style.display = 'none';
+  } else {
+    loginWall.style.display = 'flex';
+    loginBtn.style.display = 'inline-flex';
+    logoutBtn.style.display = 'none';
+    uploadBtn.style.display = 'none';
+    userInfo.style.display = 'none';
+  }
+}
+
+// ── STATE ──
+let books = JSON.parse(localStorage.getItem('biblioatlas_books') || '[]');
+let currentBook = null;
+let selectedColor = '#0d1b3e';
+let pdfFileData = null;
+let chatHistory = [];
+
+const COLORS = ['#0d1b3e','#1e3370','#e8621a','#2a5c8b','#7a3a8b','#1a5c3a','#3a6b8b','#8b2a2a'];
+const EMOJIS = ['📚','📖','📕','📗','📘','📙','🔬','🧪','🌍','🎭','💡','🏛️','⚖️','💹'];
+
+// Keywords that indicate a schema/map/diagram was generated
+const SCHEMA_KEYWORDS = [
+  'mapa conceptual','esquema','diagrama','estructura','jerarquía',
+  'árbol','resumen estructurado','mapa mental','organigrama',
+  'tabla','concept map','mind map','outline','framework'
+];
+
+function hasSchemaContent(text) {
+  const lower = text.toLowerCase();
+  return SCHEMA_KEYWORDS.some(k => lower.includes(k));
+}
+
+// ── INIT ──
+async function init() {
+  renderSwatches();
+  renderBooks();
+  updateStats();
+
+  // Supabase session check
+  const { data: { session } } = await supabase.auth.getSession();
+  if (session) {
+    currentUser = session.user;
+    supabaseSession = session;
+    updateAuthUI(session.user);
+  } else {
+    updateAuthUI(null);
+  }
+  supabase.auth.onAuthStateChange((_event, session) => {
+    if (session) {
+      currentUser = session.user;
+      supabaseSession = session;
+      updateAuthUI(session.user);
+      showToast(`✦ Bienvenido, ${session.user.user_metadata?.full_name?.split(' ')[0] || session.user.email}`);
+    } else {
+      currentUser = null;
+      supabaseSession = null;
+      updateAuthUI(null);
+    }
+  });
+
+  const dz = document.getElementById('dropZone');
+  dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('dragover'); });
+  dz.addEventListener('dragleave', () => dz.classList.remove('dragover'));
+  dz.addEventListener('drop', e => {
+    e.preventDefault();
+    dz.classList.remove('dragover');
+    const file = e.dataTransfer.files[0];
+    if (file && file.type === 'application/pdf') processFile(file);
+  });
+
+  document.getElementById('bookEmoji').value = EMOJIS[Math.floor(Math.random()*EMOJIS.length)];
+}
+
+function renderSwatches() {
+  const container = document.getElementById('colorSwatches');
+  container.innerHTML = COLORS.map(c => `
+    <div class="swatch ${c===selectedColor?'selected':''}" style="background:${c}" onclick="selectColor('${c}')"></div>
+  `).join('');
+}
+function selectColor(c) { selectedColor = c; renderSwatches(); }
+
+// ── BOOKS ──
+function saveBooks() {
+  localStorage.setItem('biblioatlas_books', JSON.stringify(books));
+  updateStats();
+}
+function updateStats() {
+  document.getElementById('statBooks').textContent = books.length;
+}
+function renderBooks(list) {
+  const grid = document.getElementById('booksGrid');
+  const data = list || books;
+  if (!data.length) {
+    grid.innerHTML = `<div class="empty-state"><div class="icon">📭</div><p>Aún no hay libros. ¡Sube el primero!</p></div>`;
+    return;
+  }
+  grid.innerHTML = data.map(b => `
+    <div class="book-card">
+      <div class="book-cover" style="background:${b.color}18">
+        <span style="font-size:3rem">${b.emoji}</span>
+        <div class="book-cover-text" style="background:linear-gradient(transparent,${b.color}dd)">${b.title}</div>
+      </div>
+      <div class="book-info">
+        <div class="book-title">${b.title}</div>
+        <div class="book-author">${b.author || 'Autor desconocido'}</div>
+        <div class="book-tags"><span class="tag">${b.category}</span></div>
+      </div>
+      <div class="book-actions">
+        <button class="btn-sm btn-read" onclick="openPdf('${b.id}')">📄 Leer</button>
+        <button class="btn-sm btn-chat" onclick="openChat('${b.id}')">✦ IA</button>
+      </div>
+    </div>
+  `).join('');
+}
+function filterBooks() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  if (!q) { renderBooks(); return; }
+  const filtered = books.filter(b =>
+    b.title.toLowerCase().includes(q) ||
+    (b.author||'').toLowerCase().includes(q) ||
+    b.category.toLowerCase().includes(q)
+  );
+  renderBooks(filtered);
+}
+
+// ── UPLOAD ──
+function handleFile(e) {
+  const file = e.target.files[0];
+  if (file) processFile(file);
+}
+function processFile(file) {
+  document.getElementById('fileName').textContent = `✅ ${file.name}`;
+  const reader = new FileReader();
+  reader.onload = () => { pdfFileData = reader.result; };
+  reader.readAsDataURL(file);
+}
+function uploadBook() {
+  const title = document.getElementById('bookTitle').value.trim();
+  const author = document.getElementById('bookAuthor').value.trim();
+  const category = document.getElementById('bookCategory').value;
+  const emoji = document.getElementById('bookEmoji').value || '📚';
+  if (!title) { showToast('⚠️ El título es obligatorio'); return; }
+  if (!pdfFileData) { showToast('⚠️ Selecciona un archivo PDF'); return; }
+  const book = {
+    id: Date.now().toString(),
+    title, author, category, emoji,
+    color: selectedColor,
+    pdf: pdfFileData,
+    addedAt: new Date().toLocaleDateString('es-ES')
+  };
+  books.unshift(book);
+  saveBooks();
+  renderBooks();
+  closeModal('uploadOverlay');
+  resetUploadForm();
+  showToast('📚 Libro agregado a la biblioteca');
+}
+function resetUploadForm() {
+  document.getElementById('bookTitle').value = '';
+  document.getElementById('bookAuthor').value = '';
+  document.getElementById('bookEmoji').value = EMOJIS[Math.floor(Math.random()*EMOJIS.length)];
+  document.getElementById('fileName').textContent = '';
+  pdfFileData = null;
+}
+
+// ── PDF VIEWER ──
+function openPdf(id) {
+  const book = books.find(b => b.id === id);
+  if (!book) return;
+  document.getElementById('pdfModalTitle').textContent = `📄 ${book.title}`;
+  document.getElementById('pdfFrame').src = book.pdf;
+  openModal('pdfOverlay');
+}
+
+// ── CHAT ──
+function openChat(id) {
+  const book = books.find(b => b.id === id);
+  if (!book) return;
+  currentBook = book;
+  chatHistory = [];
+  document.getElementById('chatBookInfo').innerHTML = `
+    <div class="chat-book-cover" style="background:${book.color}22">${book.emoji}</div>
+    <div>
+      <div class="chat-book-title">${book.title}</div>
+      <div class="chat-book-author">${book.author || 'Autor desconocido'} · ${book.category}</div>
+    </div>
+  `;
+  const msgs = document.getElementById('chatMessages');
+  msgs.innerHTML = '';
+  if (!supabaseSession) {
+    msgs.innerHTML = `<div class="no-api-warning">
+      ✦ Inicia sesión con Google para activar el chat con IA.<br><br>
+      <button class="btn btn-orange" onclick="closeModal('chatOverlay');loginWithGoogle()">Iniciar sesión con Google</button>
+    </div>`;
+    document.getElementById('chatInputArea').style.display = 'none';
+  } else {
+    document.getElementById('chatInputArea').style.display = 'flex';
+    addMessage('ai', `¡Hola! Estoy aquí para ayudarte con **"${book.title}"**. Puedo hacer resúmenes, esquemas, mapas conceptuales y responder tus preguntas. ¿Qué quieres saber??`);
+  }
+  openModal('chatOverlay');
+}
+
+function addMessage(role, text) {
+  const msgs = document.getElementById('chatMessages');
+  const div = document.createElement('div');
+  div.className = `msg msg-${role}`;
+  if (role === 'ai') {
+    const isSchema = hasSchemaContent(text);
+    const downloadBtn = isSchema
+      ? `<button class="download-pdf-btn" onclick="downloadChatPdf(this)">⬇ Descargar como PDF</button>`
+      : '';
+    div.innerHTML = `<div class="ai-label">✦ BiblioAtlas IA</div>${formatText(text)}${downloadBtn}`;
+  } else {
+    div.textContent = text;
+  }
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+// ── DOWNLOAD PDF from chat message ──
+function downloadChatPdf(btn) {
+  const msgDiv = btn.closest('.msg-ai');
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+
+  // Header
+  doc.setFillColor(13, 27, 62);
+  doc.rect(0, 0, 210, 22, 'F');
+  doc.setTextColor(255, 255, 255);
+  doc.setFontSize(13);
+  doc.setFont('helvetica', 'bold');
+  doc.text('BIBLIOATLAS — Biblioteca Inteligente de Atlas', 14, 10);
+  doc.setFontSize(8);
+  doc.setFont('helvetica', 'normal');
+  doc.setTextColor(200, 212, 232);
+  if (currentBook) doc.text(`Volumen: ${currentBook.title}`, 14, 17);
+
+  // Orange accent line
+  doc.setDrawColor(232, 98, 26);
+  doc.setLineWidth(0.8);
+  doc.line(0, 22, 210, 22);
+
+  // Body
+  doc.setTextColor(13, 27, 62);
+  doc.setFontSize(10);
+  doc.setFont('helvetica', 'normal');
+
+  // Extract plain text from the message (strip HTML)
+  const rawText = msgDiv.innerText
+    .replace(/✦ BiblioAtlas IA\s*/g, '')
+    .replace(/⬇ Descargar como PDF\s*/g, '')
+    .trim();
+
+  const lines = doc.splitTextToSize(rawText, 182);
+  let y = 32;
+  lines.forEach(line => {
+    if (y > 278) { doc.addPage(); y = 15; }
+    doc.text(line, 14, y);
+    y += 5.5;
+  });
+
+  // Footer
+  doc.setFontSize(7);
+  doc.setTextColor(120, 140, 170);
+  doc.text(`Generado por BiblioAtlas IA · ${new Date().toLocaleDateString('es-ES')}`, 14, 290);
+
+  doc.save(`BIBLIOATLAS_${currentBook ? currentBook.title.replace(/\s+/g,'_') : 'esquema'}.pdf`);
+}
+
+function formatText(t) {
+  return t
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\n/g, '<br>');
+}
+function showTyping() {
+  const msgs = document.getElementById('chatMessages');
+  const div = document.createElement('div');
+  div.className = 'msg msg-ai';
+  div.id = 'typingIndicator';
+  div.innerHTML = `<div class="ai-label">✦ BiblioAtlas IA</div><div class="typing"><span></span><span></span><span></span></div>`;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+function removeTyping() {
+  const el = document.getElementById('typingIndicator');
+  if (el) el.remove();
+}
+function handleChatKey(e) {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+}
+
+async function sendMessage() {
+  const input = document.getElementById('chatInput');
+  const text = input.value.trim();
+  if (!text) return;
+  if (!supabaseSession) { showToast('⚠️ Inicia sesión para usar la IA'); return; }
+  input.value = '';
+  document.getElementById('sendBtn').disabled = true;
+  addMessage('user', text);
+  chatHistory.push({ role: 'user', content: text });
+  showTyping();
+
+  try {
+    const systemContext = `Eres BiblioAtlas IA, el asistente de la biblioteca de Atlas para el libro "${currentBook.title}" de ${currentBook.author || 'autor desconocido'} (disciplina: ${currentBook.category}).
+    Ayuda al lector con resúmenes, esquemas, mapas conceptuales y cualquier pregunta sobre el libro.
+    Cuando generes esquemas o mapas conceptuales, estructúralos claramente con jerarquías usando sangría o símbolos.
+    Responde siempre en español de forma clara y útil.`;
+
+    const claudeMessages = chatHistory.slice(0,-1).concat([{ role:'user', content: text }]);
+
+    const res = await fetch('/.netlify/functions/claude', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${supabaseSession.access_token}`
+      },
+      body: JSON.stringify({ system: systemContext, messages: claudeMessages })
+    });
+
+    const data = await res.json();
+    if (data.error) throw new Error(data.error);
+    const reply = data.content?.[0]?.text || 'No pude obtener una respuesta.';
+    removeTyping();
+    addMessage('ai', reply);
+    chatHistory.push({ role: 'assistant', content: reply });
+
+  } catch (err) {
+    removeTyping();
+    addMessage('ai', `⚠️ Error: ${err.message}`);
+  }
+
+  document.getElementById('sendBtn').disabled = false;
+  input.focus();
+}
+
+// ── MODALS ──
+function openModal(id) {
+  document.getElementById(id).classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(id) {
+  document.getElementById(id).classList.remove('active');
+  document.body.style.overflow = '';
+  if (id === 'uploadOverlay') resetUploadForm();
+}
+document.querySelectorAll('.overlay').forEach(o => {
+  o.addEventListener('click', e => { if (e.target === o) closeModal(o.id); });
+});
+function openUploadModal() { openModal('uploadOverlay'); }
+
+// ── TOAST ──
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+init();
+</script>
+</body>
+</html>
